@@ -1,0 +1,8 @@
+@font-face{font-family:Montserrat;src:url(../assets/fonts/Montserrat-Regular.ttf);font-weight:normal}@font-face{font-family:Montserrat;src:url(../assets/fonts/Montserrat-Bold.ttf);font-weight:bold}*,*::after,*::before{margin:0;padding:0;box-sizing:border-box}body{font-family:Montserrat}
+
+.header__link{text-decoration:none;color:#fff}
+
+.page{padding-top:30px}
+
+
+/*# sourceMappingURL=main.css.map*/
