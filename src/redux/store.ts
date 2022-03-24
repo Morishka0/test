@@ -1,6 +1,6 @@
 import { combineReducers, createStore, applyMiddleware } from "redux";
 import thunkMiddleware from "redux-thunk";
-import authReduser from "./auth/authReducer";
+import authReduser from "./auth/reducer";
 // import profileReduser from "./profile/profileReducer";
 
 const reducers = combineReducers({

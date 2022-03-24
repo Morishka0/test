@@ -6,10 +6,13 @@ export type UserAuth = {
 };
 
 export type UserData = {
-	id: number;
 	login: string;
 	password: string;
 };
+
+export interface AuthUserData extends UserData {
+	id: number;
+}
 
 export type AuthAction = {
 	type: string;

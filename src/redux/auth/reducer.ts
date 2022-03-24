@@ -17,7 +17,7 @@ const authReduser = (
 	switch (type) {
 		case SET_USER_DATA:
 			return {
-				...initialState,
+				...state,
 				id,
 				login,
 				password,

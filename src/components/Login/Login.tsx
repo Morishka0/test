@@ -10,14 +10,13 @@ type FormValues = {
 
 const Login: FC = () => {
 	const dispatch = useDispatch();
-	const auth = useSelector((state: any) => state);
+	const auth = useSelector((state: any) => state.auth);
 	const onLoginFormSubmit = (values: FormValues) => {
 		const data = values;
-		data.id = 1;
 		dispatch(login(data));
 	};
 
-	console.log(auth.auth);
+	console.log(auth);
 
 	return (
 		<div className="login">

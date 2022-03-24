@@ -1,4 +1,4 @@
-import React, { FC } from "react";
+import React, { FC, } from "react";
 import { Routes, Route } from "react-router-dom";
 import Layout from "./components/Layout/Layout";
 import Profile from "./components/Profile/Profile";

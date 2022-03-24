@@ -1,6 +1,7 @@
 import React, { FC } from "react";
 import { useFormik } from "formik";
 import { TextField, Button } from "@mui/material";
+import "./LoginForm.scss";
 type InitialValues = {
 	login: string;
 	password: string;
@@ -30,9 +31,10 @@ const LoginForm: FC<PropsType> = ({ onSubmit }) => {
 					value={formik.values.password}
 					label="Password"
 					variant="outlined"
+					type="password"
 				/>
 				<Button type="submit" variant="contained">
-					Contained
+					Login
 				</Button>
 			</form>
 		</div>
