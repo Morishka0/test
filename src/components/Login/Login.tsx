@@ -1,7 +1,7 @@
 import React, { FC, useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { Navigate, useNavigate } from "react-router-dom";
-import { login } from "../../redux/auth/actions";
+import { useNavigate } from "react-router-dom";
+import { login, setAuthData } from "../../redux/auth/actions";
 import LoginForm from "../LoginForm/LoginForm";
 type FormValues = {
 	id?: number;
@@ -16,13 +16,14 @@ const Login: FC = () => {
 
 	useEffect(() => {
 		if (auth.isAuth) {
-			return navigate("/profile");
+			//return navigate("/profile");
 		}
 	}, [auth]);
 
 	const onLoginFormSubmit = (values: FormValues) => {
 		const data = values;
 		dispatch(login(data));
+		dispatch(setAuthData(localStorage.getItem("token")));
 	};
 
 	return (

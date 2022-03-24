@@ -4,7 +4,7 @@ const instance = axios.create({
   baseURL: "http://localhost:3000",
 });
 
-const getUser = (login: string) =>
-  instance.get(`users?login=${login}`).then((response) => response.data[0]);
-
-export { getUser };
+const loginUser = (login: string) => instance.post(`/login`, { login });
+const getUser = (token: string | null) =>
+  instance.get(`/profile`, { headers: { Authorization: `Bearer ${token}` } });
+export { loginUser, getUser };

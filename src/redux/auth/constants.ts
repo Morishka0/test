@@ -1,3 +1,4 @@
 const SET_USER_DATA = "SET_USER_DATA";
+const SET_USER_TOKEN = "SET_USER_TOKEN";
 
-export { SET_USER_DATA };
+export { SET_USER_DATA, SET_USER_TOKEN };

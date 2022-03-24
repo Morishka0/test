@@ -2,6 +2,7 @@ export type UserAuth = {
 	id: number | null;
 	login: string | null;
 	password: string | null;
+	token: string | null;
 	isAuth: boolean | null;
 };
 
