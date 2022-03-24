@@ -1,8 +1,10 @@
-@font-face{font-family:Montserrat;src:url(../assets/fonts/Montserrat-Regular.ttf);font-weight:normal}@font-face{font-family:Montserrat;src:url(../assets/fonts/Montserrat-Bold.ttf);font-weight:bold}*,*::after,*::before{margin:0;padding:0;box-sizing:border-box}body{font-family:Montserrat}
+@font-face{font-family:Montserrat;src:url(../assets/fonts/Montserrat-Regular.ttf);font-weight:normal}@font-face{font-family:Montserrat;src:url(../assets/fonts/Montserrat-Bold.ttf);font-weight:bold}*,*::after,*::before{margin:0;padding:0;box-sizing:border-box}body{font-family:Montserrat}.title{text-align:center;margin-bottom:20px}
 
 .header__link{text-decoration:none;color:#fff}
 
 .page{padding-top:30px}
+
+.login-form{display:flex;justify-content:center;align-items:center}.login-form__form{width:300px;display:flex;flex-direction:column;row-gap:10px}
 
 
 /*# sourceMappingURL=main.css.map*/
